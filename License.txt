@@ -1,0 +1,35 @@
+
+### 2. Скрипты
+
+**src/preprocess.py**
+```python
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+import joblib
+import os
+
+def preprocess_data(input_path, output_dir):
+    """Обработка сырых данных"""
+    df = pd.read_csv(input_path)
+    
+    # Feature engineering
+    df['loan_percent_income'] = df['loan_amount'] / df['salary']
+    df = pd.get_dummies(df, columns=['home_ownership'], drop_first=True)
+    
+    # Сохранение
+    os.makedirs(output_dir, exist_ok=True)
+    df.to_csv(f"{output_dir}/processed_data.csv", index=False)
+    
+    # Сохранение scaler
+    scaler = StandardScaler()
+    scaler.fit(df[['age', 'salary', 'credit_score']])
+    joblib.dump(scaler, f"{output_dir}/scaler.pkl")
+
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", default="data/raw/credit_data.csv")
+    parser.add_argument("--output", default="data/processed")
+    args = parser.parse_args()
+    
+    preprocess_data(args.input, args.output)

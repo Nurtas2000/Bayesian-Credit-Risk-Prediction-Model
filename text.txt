@@ -1,0 +1,22 @@
+credit-risk-bayesian-model/
+│
+├── data/
+│   ├── raw/credit_data.csv          # Исходные данные
+│   └── processed/                   # Обработанные данные
+│
+├── models/
+│   ├── trained_model.pkl            # Сохраненная модель
+│   └── shap_values.npy              # SHAP значения
+│
+├── notebooks/
+│   ├── 01_EDA.ipynb                 # Анализ данных
+│   └── 02_Model_Training.ipynb      # Обучение модели
+│
+├── src/
+│   ├── preprocess.py                # Скрипт предобработки
+│   ├── train_model.py               # Скрипт обучения
+│   └── predict.py                   # Скрипт предсказаний
+│
+├── requirements.txt                 # Зависимости
+├── .gitignore
+└── README.md

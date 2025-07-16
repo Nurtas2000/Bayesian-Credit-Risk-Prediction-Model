@@ -1,0 +1,9 @@
+# Инициализация репозитория
+git init
+git add .
+git commit -m "Initial commit with Bayesian credit risk model"
+
+# Создание репозитория на GitHub и пушинг
+git remote add origin https://github.com/yourusername/credit-risk-bayesian-model.git
+git branch -M main
+git push -u origin main
