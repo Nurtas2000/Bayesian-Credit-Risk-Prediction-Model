@@ -1,13 +1,25 @@
-\# Bayesian Credit Risk Prediction Model
+Bayesian Credit Risk Prediction Model
+Predicting default probability using Bayesian methods
 
-Прогнозирование вероятности дефолта с использованием байесовских методов
+🚀 Quick Start
+Clone the repository:
 
-\## 🚀 Быстрый старт
-
-1\. Клонировать репозиторий:
-
-\`\`\`bash
-
+bash
+Копировать
+Редактировать
 git clone https://github.com/Nurtas2000/credit-risk-bayesian-model.git
-
 cd credit-risk-bayesian-model
+📁 Project Structure
+bash
+Копировать
+Редактировать
+credit-risk-bayesian-model/
+│
+├── License.txt             # License file
+├── README.md               # Project description
+├── config.py               # Configuration settings
+├── fitness_analysis.py     # Analysis logic
+├── gitignore.txt           # Files to be ignored by Git
+├── report.md.txt           # Report or documentation
+├── test_utils.py           # Unit tests for utility functions
+└── utils.py                # Helper functions
