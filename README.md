@@ -11,7 +11,7 @@ Clone the repository:
 git clone https://github.com/Nurtas2000/credit-risk-bayesian-model.git
 cd credit-risk-bayesian-model
 
-credit-risk-bayesian-model/
+##credit-risk-bayesian-model/
 │
 ├── License.txt          # License file  
 ├── README.md            # Project description  
