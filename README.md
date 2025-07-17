@@ -8,6 +8,6 @@
 
 \`\`\`bash
 
-git clone https://github.com/yourusername/credit-risk-bayesian-model.git
+git clone https://github.com/Nurtas2000/credit-risk-bayesian-model.git
 
 cd credit-risk-bayesian-model
